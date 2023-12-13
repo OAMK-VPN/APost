@@ -66,6 +66,7 @@ const ParcelsView = () => {
 
       } 
       catch (error) {
+        localStorage.removeItem("token");
         navigate('/login', {replace: true});
         return
       }
